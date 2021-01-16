@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/general.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Aplicacion -->
+    <div class="container-app-principal">
+        
+        <div class="content-wrapper">
+           
+            <div class="app-principal">
+
+                <!-- Navegacion -->
+                <aside class="container-nav-music">
+
+                    <section class="nav-music">
+                        
+                        <div class="nav-music_hamburguer">
+                            <i class="fas fa-times"></i>
+                        </div>
+
+                        <div class="nav-music_icon">
+                            <img src="images/aside/foxbel-music.png" alt="icon-app">
+                        </div>
+
+                        <div class="nav-music-navigation">
+                            
+                            <div class="navigation-library">
+                                <p class="navigation_library-title">Mi Libreria</p>
+                                <ul class="navigation_library-nav">
+                                    <li class="navigation_library-item">Recientes</li>
+                                    <li class="navigation_library-item">Artistas</li>
+                                    <li class="navigation_library-item">Albums</li>
+                                    <li class="navigation_library-item">Canciones</li>
+                                    <li class="navigation_library-item">Estaciones</li>
+                                </ul>
+                            </div>
+
+                            <div class="navigation-playist">
+                                <p class="navigation_playist-title">Playist</p>
+                                <ul class="navigation_playist-nav">
+                                    <li class="navigation_playist-item">Metal</li>
+                                    <li class="navigation_playist-item">Para bailar</li>
+                                    <li class="navigation_playist-item">Rock 90s</li>
+                                    <li class="navigation_playist-item">Baladas</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </section>
+                </aside>
+
+           
+
+                <!-- Contenido-Principal -->
+                <main class="container-principal-app">
+                    <div class="principal-app">
+                        
+                        <div class="container-search-user">
+                            <div class="search-user">
+
+                                <div class="search">
+                                    <input type="text" placeholder="Buscar" class="search-input" id="search-tracks">
+                                    <i class="fas fa-search search-icon" id="search-icon"></i>
+                                </div>
+
+        
+                                <div class="user">
+                                    <i class="fas fa-user"></i>
+                                    <p class="user-text">Mateo Cruz.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+
+                        <div class="container-banner">
+                            
+                            <div class="banner">
+                                
+                                <div class="banner-img">
+                                    <img src="" class="banner-img-folder" id="banner-img">
+        
+                                    <i class="fas fa-play play-banner"></i>
+                                </div>
+
+                                <div class="banner-description">
+                                
+                                    <p class="banner-description_artist" id="banner-artist-name"></p>
+                                    
+                                    <p class="banner-description_best">
+                                        lo mejor de <span id="banner-artist-name-description"></span>
+                                        <span class="banner-description_fan"><span id="fan-description"></span> seguidores</span>
+                                    </p>
+
+                                    <p class="banner-description_artist-description">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui fuga repudiandae labore aperiam officia blanditiis, sint quod debitis dolore assumenda soluta nulla maiores laborum quam! Officiis id ducimus iusto unde.
+                                    </p>
+
+                                    <div class="banner-description_buttons">
+                                        <input type="button" value='Reproducir' class="play-banner-description">
+                                        <input type="button" value="Seguir" class="follow-banner">
+                                        <i class='fas fa-ellipsis-h options-banner'></i>
+                                    </div>
+
+                                </div>
+
+        
+                            </div>
+
+                        </div>
+
+                        
+                        <div class="container-album-music">
+                            <div class="album-music">
+                                <p class="album-music-results">Resultados</p>
+
+                                <div class="album-music-items" id="albumns-music">
+                                    
+
+                                </div>
+
+                            
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+
+              
+                    
+            
+            </div>
+        
+        </div>
+
+    </div>
+
+      <!-- Reproductor -->
+      <div class="container-player-music">
+    
+        <div class="content-wrapper">
+                    
+            <div class="player-music">
+            
+               <div class="song-play">
+
+                   <div class="folder-music">
+                       <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Forig00.deviantart.net%2Fedad%2Ff%2F2017%2F037%2Ff%2F5%2Funknown_album_cover_glas_look__redesigned__500x500_by_nucleartestsite-day4crn.png&f=1&nofb=1" class="folder-music-play" alt="folder-album-player" id="album-player-reproduc">
+    
+                   </div>
+
+                   <div class="play-song-description">
+                        <p class="title-song"></p>
+                        <p class="artist-song"> <span>Album</span></p>
+                    </div> 
+               </div>
+               
+
+               
+
+                <div class="player">
+                    
+                  
+
+                    <div class="player-buttons">
+                        <i class="fas fa-step-backward"></i>
+                        <i class="fas fa-play"></i>
+                        <i class="fas fa-step-forward"></i>
+
+                        <audio id='music-audio'></audio>
+
+                    </div>
+
+                </div>
+
+                <div class="music-volumen">
+                    <i class="fas fa-volume-up"></i>
+                    <input type="range" min="0" max="100" value="0"> 
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <input type="hidden" name="" value="">
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/6e170e0ce6.js" crossorigin="anonymous"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/query.js"></script>
+    <script src="scripts/showtrack.js"></script>
+    <script src="scripts/playmusic.js"></script>
+
+    
+    
+</body>
+</html>
+
